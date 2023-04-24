@@ -1,12 +1,13 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import MoviesList from "./MoviesList";
+// Update the file path to correctly reference the MoviesList component
 
 function MoviesPage({ movies }) {
   return (
     <div>
-      <MoviesList movies={movies} />
+      <MoviesPage movies={movies} />
     </div>
   );
 }
+
 export default MoviesPage;
